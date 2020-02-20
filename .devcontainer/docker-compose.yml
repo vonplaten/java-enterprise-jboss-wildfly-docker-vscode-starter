@@ -1,0 +1,9 @@
+version: '2.3'
+services:
+  myjeedev:
+    volumes:
+      - jee1_volume:/opt/jboss/wildfly/standalone/deployments
+    command: sleep infinity 
+
+volumes:
+  jee1_volume:

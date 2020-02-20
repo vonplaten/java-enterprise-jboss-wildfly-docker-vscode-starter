@@ -1,0 +1,12 @@
+version: "2.3"
+services:
+  myjeedev:
+    
+    build: .
+    image: myjee
+    ports:
+      - "8080:8080"
+      - "9090:9090"
+    ipc: host
+    # user: node
+    container_name: myjee

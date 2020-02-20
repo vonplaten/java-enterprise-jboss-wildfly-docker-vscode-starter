@@ -1,0 +1,21 @@
+
+{
+	"name": "JavaEE",
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+		"docker-compose.yml"
+	],
+	"workspaceFolder": "/opt/jboss/wildfly",
+	"service": "myjeedev",
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash",
+	},
+	"extensions": [
+	],
+	"shutdownAction": "stopCompose",
+
+	// "postCreateCommand": "/opt/jboss/wildfly/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0",
+	"postCreateCommand": "java -version",
+
+}
+
